@@ -9,6 +9,7 @@ The setups steps expect following tools installed on the system.
 ##### 1. Check out the repository
 
 git clone https://github.com/rajputakku/Appointment-Booking-Api.git
+cd appointment_booking_api
 
 ##### 2. Install dependencies
 
