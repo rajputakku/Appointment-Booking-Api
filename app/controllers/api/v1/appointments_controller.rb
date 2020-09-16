@@ -14,7 +14,7 @@ class Api::V1::AppointmentsController < ApplicationController
 		else
 			@appointments = Appointment.all	
 		end
-		render json: @appointments 
+		render json: @appointments, status: 200
 	end
 
 	def create
@@ -24,7 +24,7 @@ class Api::V1::AppointmentsController < ApplicationController
 	  		else
 			      @appointment = @current_user.appointments.build(appointment_params)
 			      if @appointment.save
-			        render json: @appointment 
+			        render json: @appointment, status: 200
 			      else
 			        render json: { status: 401 }
 			      end
